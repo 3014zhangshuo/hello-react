@@ -105,9 +105,17 @@ class Index extends Component {
             修改 wordings
           </button>
         </div>
+        <HelloWorld />
       </div>
     )
   }
+}
+
+const HelloWorld = (props) => {
+  const sayHi = (event) => alert('Hello World')
+  return(
+    <div onClick={sayHi}>Hello World</div>
+  )
 }
 
 ReactDOM.render(
